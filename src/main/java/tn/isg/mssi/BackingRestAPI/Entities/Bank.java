@@ -4,6 +4,8 @@ import lombok.*;
 
 import javax.persistence.*;
 import javax.validation.constraints.Email;
+import java.util.HashSet;
+import java.util.Set;
 
 @Getter //generates all getters
 @Setter //generates all setters
@@ -26,4 +28,8 @@ public class Bank {
     private String email;
     @NonNull
     private String telephoneNumber;
+
+    //specify the relationship between the bank and the account (1-*)
+    @OneToMany(mappedBy = "bank", cascade = CascadeType.ALL)
+    private Set<Account> accounts = new HashSet<>();
 }
