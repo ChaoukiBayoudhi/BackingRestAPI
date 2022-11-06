@@ -19,7 +19,7 @@ public class Bank {
     //the first added bank will have 1 as primary key value, the next will have 2 ...
     private Integer id;
     @NonNull
-    @Column(name = "bank_name",unique = true)
+    @Column(name = "bank_name", unique = true)
     private String name;
     private String address;
     @NonNull

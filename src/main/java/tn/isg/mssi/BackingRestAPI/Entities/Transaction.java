@@ -6,7 +6,6 @@ import tn.isg.mssi.BackingRestAPI.Enumerations.TransactionType;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Getter
@@ -33,6 +32,6 @@ public class Transaction {
 
     //specify the relationship between Account and Bank (*-1)
     @ManyToOne
-    @JoinColumn(name = "account_rib",referencedColumnName = "rib")
+    @JoinColumn(name = "account_rib", referencedColumnName = "rib")
     private Account account;
 }

@@ -12,7 +12,9 @@ import java.util.List;
 public class CustomerController {
     @Autowired
     private CustomerService service;
+
     @GetMapping("/")
-    public List<Customer> allCustomers()
-    {return service.getAll();}
+    public List<Customer> allCustomers() {
+        return service.getAll();
+    }
 }

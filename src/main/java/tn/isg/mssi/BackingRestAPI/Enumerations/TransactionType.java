@@ -1,8 +1,8 @@
 package tn.isg.mssi.BackingRestAPI.Enumerations;
 
 public enum TransactionType {
-    RETRY,
-    VERSEMENT_ESPECE,
-    VERSEMENT_CHECK,
-    VIRMENT_AUTRE_COMPTE
+WITHDRAW,
+    CASH_DEPOSIT,
+    CHECK_PAYMENT,
+    OTHER_ACCOUNT_TRANSFER
 }

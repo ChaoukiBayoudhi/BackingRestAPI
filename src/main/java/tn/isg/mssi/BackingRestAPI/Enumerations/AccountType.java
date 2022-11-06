@@ -1,7 +1,7 @@
 package tn.isg.mssi.BackingRestAPI.Enumerations;
 
 public enum AccountType {
-    SAVING_ACCOUNT,
+    SAVINGS_ACCOUNT,
     CURRENT_ACCOUNT,
-    BLOCKED_ACCOUNT
+    FROZEN_ACCOUNT
 }

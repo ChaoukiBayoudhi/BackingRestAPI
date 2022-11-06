@@ -26,18 +26,18 @@ public class Account {
     private LocalDate createdDate;
     @Column(columnDefinition = "real default 20")
     private BigDecimal amount;
-    private BigDecimal seuil;
+    private BigDecimal thresholdValue;
     @Enumerated(EnumType.STRING)
     private AccountState state;
     @Enumerated(EnumType.STRING)
     private AccountType type;
     //specify the relationship between Account and Customer (*-1)
     @ManyToOne
-    @JoinColumn(name = "customer_id",referencedColumnName = "id")
+    @JoinColumn(name = "customer_id", referencedColumnName = "id")
     private Customer owner;
     //specify the relationship between Account and Bank (*-1)
     @ManyToOne
-    @JoinColumn(name = "bank_id",referencedColumnName = "id")
+    @JoinColumn(name = "bank_id", referencedColumnName = "id")
     private Bank bank;
 
     //specify the relationship between Account and Transaction (1-*)
