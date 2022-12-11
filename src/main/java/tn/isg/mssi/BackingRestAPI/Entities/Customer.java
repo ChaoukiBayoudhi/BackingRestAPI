@@ -15,10 +15,10 @@ import java.util.Set;
 @ToString
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
-public class Customer {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+
+@PrimaryKeyJoinColumn(name="id")
+public class Customer extends User {
+
     @NonNull
     private String name;
     @NonNull
@@ -29,6 +29,7 @@ public class Customer {
     private String cin;
     @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate birthDate;
+
 
     //specify the relationship between Customer and Account (1-*)
     @OneToMany(mappedBy = "owner", cascade = CascadeType.ALL)
