@@ -3165,3 +3165,208 @@ This generated password is for development use only. Your security configuration
 2022-12-11 10:56:45.916  INFO 50497 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 21 ms
 2022-12-11 10:56:51.924 DEBUG 50497 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select customer0_.id as id1_5_, customer0_1_.cin as cin2_5_, customer0_1_.password as password3_5_, customer0_1_.role_id as role_id5_5_, customer0_1_.user_name as user_nam4_5_, customer0_.birth_date as birth_da1_2_, customer0_.family_name as family_n2_2_, customer0_.name as name3_2_ from customer customer0_ inner join users customer0_1_ on customer0_.id=customer0_1_.id
 2022-12-11 11:00:04.756 DEBUG 50497 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select customer0_.id as id1_5_, customer0_1_.cin as cin2_5_, customer0_1_.password as password3_5_, customer0_1_.role_id as role_id5_5_, customer0_1_.user_name as user_nam4_5_, customer0_.birth_date as birth_da1_2_, customer0_.family_name as family_n2_2_, customer0_.name as name3_2_ from customer customer0_ inner join users customer0_1_ on customer0_.id=customer0_1_.id
+2022-12-11 12:01:51.954  INFO 50497 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-11 12:01:51.980  INFO 50497 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-12-11 12:01:51.987 DEBUG 50497 --- [SpringApplicationShutdownHook] org.hibernate.SQL                        : alter table if exists account drop constraint if exists FKawl1lrpngb7h5ktg79odeic5w
+2022-12-11 12:01:52.172 DEBUG 50497 --- [SpringApplicationShutdownHook] org.hibernate.SQL                        : alter table if exists account drop constraint if exists FKnnwpo0lfq4xai1rs6887sx02k
+2022-12-11 12:01:52.176 DEBUG 50497 --- [SpringApplicationShutdownHook] org.hibernate.SQL                        : alter table if exists customer drop constraint if exists FKhu8qiqgy7buhjc5s739s4x8we
+2022-12-11 12:01:52.180 DEBUG 50497 --- [SpringApplicationShutdownHook] org.hibernate.SQL                        : alter table if exists transaction drop constraint if exists FK3dd5yayc5v3mxg3fwllhndmeu
+2022-12-11 12:01:52.183 DEBUG 50497 --- [SpringApplicationShutdownHook] org.hibernate.SQL                        : alter table if exists users drop constraint if exists FKp56c1712k691lhsyewcssf40f
+2022-12-11 12:01:52.188 DEBUG 50497 --- [SpringApplicationShutdownHook] org.hibernate.SQL                        : drop table if exists account cascade
+2022-12-11 12:01:52.239 DEBUG 50497 --- [SpringApplicationShutdownHook] org.hibernate.SQL                        : drop table if exists bank cascade
+2022-12-11 12:01:52.261 DEBUG 50497 --- [SpringApplicationShutdownHook] org.hibernate.SQL                        : drop table if exists customer cascade
+2022-12-11 12:01:52.267 DEBUG 50497 --- [SpringApplicationShutdownHook] org.hibernate.SQL                        : drop table if exists roles cascade
+2022-12-11 12:01:52.272 DEBUG 50497 --- [SpringApplicationShutdownHook] org.hibernate.SQL                        : drop table if exists transaction cascade
+2022-12-11 12:01:52.277 DEBUG 50497 --- [SpringApplicationShutdownHook] org.hibernate.SQL                        : drop table if exists users cascade
+2022-12-11 12:01:52.300  INFO 50497 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-11 12:01:52.319  INFO 50497 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-11 12:02:24.163  INFO 53830 --- [main] t.i.m.B.BackingRestApiApplication        : Starting BackingRestApiApplication using Java 19.0.1 on Chaoukis-MacBook-Pro.local with PID 53830 (/Users/chaoukibayoudhi/Documents/Teaching Package/ISG Tunis/first semester/secure programming/practical-exercises/BackingRestAPI/target/classes started by chaoukibayoudhi in /Users/chaoukibayoudhi/Documents/Teaching Package/ISG Tunis/first semester/secure programming/practical-exercises/BackingRestAPI)
+2022-12-11 12:02:24.168  INFO 53830 --- [main] t.i.m.B.BackingRestApiApplication        : No active profile set, falling back to 1 default profile: "default"
+2022-12-11 12:02:24.893  INFO 53830 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-11 12:02:24.931  INFO 53830 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 3 JPA repository interfaces.
+2022-12-11 12:02:25.316  INFO 53830 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-11 12:02:25.325  INFO 53830 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-11 12:02:25.325  INFO 53830 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-11 12:02:25.384  INFO 53830 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-11 12:02:25.384  INFO 53830 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1119 ms
+2022-12-11 12:02:25.505  INFO 53830 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-11 12:02:25.539  INFO 53830 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-12-11 12:02:25.651  INFO 53830 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-11 12:02:25.719  INFO 53830 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-12-11 12:02:26.106 DEBUG 53830 --- [main] org.hibernate.SQL                        : alter table if exists account drop constraint if exists FKawl1lrpngb7h5ktg79odeic5w
+2022-12-11 12:02:26.107  INFO 53830 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-11 12:02:26.174  INFO 53830 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-11 12:02:26.179  WARN 53830 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-12-11 12:02:26.179  WARN 53830 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "account" does not exist, skipping
+2022-12-11 12:02:26.179 DEBUG 53830 --- [main] org.hibernate.SQL                        : alter table if exists account drop constraint if exists FKnnwpo0lfq4xai1rs6887sx02k
+2022-12-11 12:02:26.187  WARN 53830 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-12-11 12:02:26.187  WARN 53830 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "account" does not exist, skipping
+2022-12-11 12:02:26.187 DEBUG 53830 --- [main] org.hibernate.SQL                        : alter table if exists customer drop constraint if exists FKhu8qiqgy7buhjc5s739s4x8we
+2022-12-11 12:02:26.189  WARN 53830 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-12-11 12:02:26.189  WARN 53830 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "customer" does not exist, skipping
+2022-12-11 12:02:26.189 DEBUG 53830 --- [main] org.hibernate.SQL                        : alter table if exists transaction drop constraint if exists FK3dd5yayc5v3mxg3fwllhndmeu
+2022-12-11 12:02:26.191  WARN 53830 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-12-11 12:02:26.191  WARN 53830 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "transaction" does not exist, skipping
+2022-12-11 12:02:26.191 DEBUG 53830 --- [main] org.hibernate.SQL                        : alter table if exists users drop constraint if exists FKp56c1712k691lhsyewcssf40f
+2022-12-11 12:02:26.195  WARN 53830 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-12-11 12:02:26.196  WARN 53830 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "users" does not exist, skipping
+2022-12-11 12:02:26.196 DEBUG 53830 --- [main] org.hibernate.SQL                        : drop table if exists account cascade
+2022-12-11 12:02:26.196  WARN 53830 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-12-11 12:02:26.196  WARN 53830 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "account" does not exist, skipping
+2022-12-11 12:02:26.196 DEBUG 53830 --- [main] org.hibernate.SQL                        : drop table if exists bank cascade
+2022-12-11 12:02:26.197  WARN 53830 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-12-11 12:02:26.197  WARN 53830 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "bank" does not exist, skipping
+2022-12-11 12:02:26.197 DEBUG 53830 --- [main] org.hibernate.SQL                        : drop table if exists customer cascade
+2022-12-11 12:02:26.197  WARN 53830 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-12-11 12:02:26.197  WARN 53830 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "customer" does not exist, skipping
+2022-12-11 12:02:26.197 DEBUG 53830 --- [main] org.hibernate.SQL                        : drop table if exists roles cascade
+2022-12-11 12:02:26.197  WARN 53830 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-12-11 12:02:26.198  WARN 53830 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "roles" does not exist, skipping
+2022-12-11 12:02:26.198 DEBUG 53830 --- [main] org.hibernate.SQL                        : drop table if exists transaction cascade
+2022-12-11 12:02:26.198  WARN 53830 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-12-11 12:02:26.198  WARN 53830 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "transaction" does not exist, skipping
+2022-12-11 12:02:26.198 DEBUG 53830 --- [main] org.hibernate.SQL                        : drop table if exists users cascade
+2022-12-11 12:02:26.198  WARN 53830 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-12-11 12:02:26.198  WARN 53830 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "users" does not exist, skipping
+2022-12-11 12:02:26.203 DEBUG 53830 --- [main] org.hibernate.SQL                        : create table account (rib int8 not null, amount real default 20, created_date date default current_date, state varchar(255), threshold_value numeric(19, 2), type varchar(255), bank_id int4, customer_id int8, primary key (rib))
+2022-12-11 12:02:26.223 DEBUG 53830 --- [main] org.hibernate.SQL                        : create table bank (id int4 generated by default as identity, address varchar(255), email varchar(255), bank_name varchar(255), telephone_number varchar(255), primary key (id))
+2022-12-11 12:02:26.233 DEBUG 53830 --- [main] org.hibernate.SQL                        : create table customer (birth_date date, family_name varchar(255), name varchar(255), id int8 not null, primary key (id))
+2022-12-11 12:02:26.236 DEBUG 53830 --- [main] org.hibernate.SQL                        : create table roles (id int4 generated by default as identity, name varchar(255), primary key (id))
+2022-12-11 12:02:26.239 DEBUG 53830 --- [main] org.hibernate.SQL                        : create table transaction (id int8 generated by default as identity, amount numeric(19, 2), date_time timestamp, message varchar(255), rib_other_account int8, type varchar(255), account_rib int8, primary key (id))
+2022-12-11 12:02:26.246 DEBUG 53830 --- [main] org.hibernate.SQL                        : create table users (id int8 generated by default as identity, cin varchar(8), password varchar(255), user_name varchar(255), role_id int4, primary key (id))
+2022-12-11 12:02:26.251 DEBUG 53830 --- [main] org.hibernate.SQL                        : alter table if exists bank add constraint UK_k7b1fp39xemdvdtco9j7uk62y unique (bank_name)
+2022-12-11 12:02:26.253 DEBUG 53830 --- [main] org.hibernate.SQL                        : alter table if exists account add constraint FKawl1lrpngb7h5ktg79odeic5w foreign key (bank_id) references bank
+2022-12-11 12:02:26.262 DEBUG 53830 --- [main] org.hibernate.SQL                        : alter table if exists account add constraint FKnnwpo0lfq4xai1rs6887sx02k foreign key (customer_id) references customer
+2022-12-11 12:02:26.264 DEBUG 53830 --- [main] org.hibernate.SQL                        : alter table if exists customer add constraint FKhu8qiqgy7buhjc5s739s4x8we foreign key (id) references users
+2022-12-11 12:02:26.266 DEBUG 53830 --- [main] org.hibernate.SQL                        : alter table if exists transaction add constraint FK3dd5yayc5v3mxg3fwllhndmeu foreign key (account_rib) references account
+2022-12-11 12:02:26.267 DEBUG 53830 --- [main] org.hibernate.SQL                        : alter table if exists users add constraint FKp56c1712k691lhsyewcssf40f foreign key (role_id) references roles
+2022-12-11 12:02:26.270  INFO 53830 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-11 12:02:26.275  INFO 53830 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-11 12:02:26.472  WARN 53830 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-11 12:02:26.711  WARN 53830 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 6056c895-57f4-404b-aebe-3fc4e9ac953a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-12-11 12:02:26.791  INFO 53830 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7d4e424e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@799206ad, org.springframework.security.web.context.SecurityContextPersistenceFilter@633cad4d, org.springframework.security.web.header.HeaderWriterFilter@270be080, org.springframework.security.web.csrf.CsrfFilter@180fb796, org.springframework.security.web.authentication.logout.LogoutFilter@4edd8a0a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7e741d6b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4e826fd4, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@60251ddb, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@16024b49, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b86f4cb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@468646ea, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2059c3ff, org.springframework.security.web.session.SessionManagementFilter@78f35e39, org.springframework.security.web.access.ExceptionTranslationFilter@623ded82, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6d7772d3]
+2022-12-11 12:02:26.825  INFO 53830 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-11 12:02:26.833  INFO 53830 --- [main] t.i.m.B.BackingRestApiApplication        : Started BackingRestApiApplication in 3.295 seconds (JVM running for 4.409)
+2022-12-11 12:03:18.223  INFO 53830 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-11 12:03:18.225  INFO 53830 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-11 12:03:18.231  INFO 53830 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2022-12-11 12:04:18.382 DEBUG 53830 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select customer0_.id as id1_5_, customer0_1_.cin as cin2_5_, customer0_1_.password as password3_5_, customer0_1_.role_id as role_id5_5_, customer0_1_.user_name as user_nam4_5_, customer0_.birth_date as birth_da1_2_, customer0_.family_name as family_n2_2_, customer0_.name as name3_2_ from customer customer0_ inner join users customer0_1_ on customer0_.id=customer0_1_.id
+2022-12-11 12:09:07.787  INFO 53830 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-11 12:09:07.809  INFO 53830 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-12-11 12:09:07.816 DEBUG 53830 --- [SpringApplicationShutdownHook] org.hibernate.SQL                        : alter table if exists account drop constraint if exists FKawl1lrpngb7h5ktg79odeic5w
+2022-12-11 12:09:08.058 DEBUG 53830 --- [SpringApplicationShutdownHook] org.hibernate.SQL                        : alter table if exists account drop constraint if exists FKnnwpo0lfq4xai1rs6887sx02k
+2022-12-11 12:09:08.074 DEBUG 53830 --- [SpringApplicationShutdownHook] org.hibernate.SQL                        : alter table if exists customer drop constraint if exists FKhu8qiqgy7buhjc5s739s4x8we
+2022-12-11 12:09:08.083 DEBUG 53830 --- [SpringApplicationShutdownHook] org.hibernate.SQL                        : alter table if exists transaction drop constraint if exists FK3dd5yayc5v3mxg3fwllhndmeu
+2022-12-11 12:09:08.088 DEBUG 53830 --- [SpringApplicationShutdownHook] org.hibernate.SQL                        : alter table if exists users drop constraint if exists FKp56c1712k691lhsyewcssf40f
+2022-12-11 12:09:08.102 DEBUG 53830 --- [SpringApplicationShutdownHook] org.hibernate.SQL                        : drop table if exists account cascade
+2022-12-11 12:09:08.200 DEBUG 53830 --- [SpringApplicationShutdownHook] org.hibernate.SQL                        : drop table if exists bank cascade
+2022-12-11 12:09:08.206 DEBUG 53830 --- [SpringApplicationShutdownHook] org.hibernate.SQL                        : drop table if exists customer cascade
+2022-12-11 12:09:08.215 DEBUG 53830 --- [SpringApplicationShutdownHook] org.hibernate.SQL                        : drop table if exists roles cascade
+2022-12-11 12:09:08.219 DEBUG 53830 --- [SpringApplicationShutdownHook] org.hibernate.SQL                        : drop table if exists transaction cascade
+2022-12-11 12:09:08.226 DEBUG 53830 --- [SpringApplicationShutdownHook] org.hibernate.SQL                        : drop table if exists users cascade
+2022-12-11 12:09:08.249  INFO 53830 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-11 12:09:08.278  INFO 53830 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-11 12:09:26.587  INFO 54061 --- [main] t.i.m.B.BackingRestApiApplication        : Starting BackingRestApiApplication using Java 19.0.1 on Chaoukis-MacBook-Pro.local with PID 54061 (/Users/chaoukibayoudhi/Documents/Teaching Package/ISG Tunis/first semester/secure programming/practical-exercises/BackingRestAPI/target/classes started by chaoukibayoudhi in /Users/chaoukibayoudhi/Documents/Teaching Package/ISG Tunis/first semester/secure programming/practical-exercises/BackingRestAPI)
+2022-12-11 12:09:26.589  INFO 54061 --- [main] t.i.m.B.BackingRestApiApplication        : No active profile set, falling back to 1 default profile: "default"
+2022-12-11 12:09:27.135  INFO 54061 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-11 12:09:27.173  INFO 54061 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 3 JPA repository interfaces.
+2022-12-11 12:09:27.584  INFO 54061 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-11 12:09:27.590  INFO 54061 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-11 12:09:27.590  INFO 54061 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-11 12:09:27.645  INFO 54061 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-11 12:09:27.645  INFO 54061 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1018 ms
+2022-12-11 12:09:27.772  INFO 54061 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-11 12:09:27.806  INFO 54061 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-12-11 12:09:27.918  INFO 54061 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-11 12:09:27.981  INFO 54061 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-12-11 12:09:28.381 DEBUG 54061 --- [main] org.hibernate.SQL                        : alter table if exists account drop constraint if exists FKawl1lrpngb7h5ktg79odeic5w
+2022-12-11 12:09:28.381  INFO 54061 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-11 12:09:28.465  INFO 54061 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-11 12:09:28.469  WARN 54061 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-12-11 12:09:28.469  WARN 54061 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "account" does not exist, skipping
+2022-12-11 12:09:28.469 DEBUG 54061 --- [main] org.hibernate.SQL                        : alter table if exists account drop constraint if exists FKnnwpo0lfq4xai1rs6887sx02k
+2022-12-11 12:09:28.469  WARN 54061 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-12-11 12:09:28.469  WARN 54061 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "account" does not exist, skipping
+2022-12-11 12:09:28.469 DEBUG 54061 --- [main] org.hibernate.SQL                        : alter table if exists customer drop constraint if exists FKhu8qiqgy7buhjc5s739s4x8we
+2022-12-11 12:09:28.470  WARN 54061 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-12-11 12:09:28.470  WARN 54061 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "customer" does not exist, skipping
+2022-12-11 12:09:28.470 DEBUG 54061 --- [main] org.hibernate.SQL                        : alter table if exists transaction drop constraint if exists FK3dd5yayc5v3mxg3fwllhndmeu
+2022-12-11 12:09:28.470  WARN 54061 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-12-11 12:09:28.470  WARN 54061 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "transaction" does not exist, skipping
+2022-12-11 12:09:28.470 DEBUG 54061 --- [main] org.hibernate.SQL                        : alter table if exists users drop constraint if exists FKp56c1712k691lhsyewcssf40f
+2022-12-11 12:09:28.470  WARN 54061 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-12-11 12:09:28.470  WARN 54061 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "users" does not exist, skipping
+2022-12-11 12:09:28.471 DEBUG 54061 --- [main] org.hibernate.SQL                        : drop table if exists account cascade
+2022-12-11 12:09:28.471  WARN 54061 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-12-11 12:09:28.471  WARN 54061 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "account" does not exist, skipping
+2022-12-11 12:09:28.471 DEBUG 54061 --- [main] org.hibernate.SQL                        : drop table if exists bank cascade
+2022-12-11 12:09:28.472  WARN 54061 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-12-11 12:09:28.472  WARN 54061 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "bank" does not exist, skipping
+2022-12-11 12:09:28.472 DEBUG 54061 --- [main] org.hibernate.SQL                        : drop table if exists customer cascade
+2022-12-11 12:09:28.472  WARN 54061 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-12-11 12:09:28.472  WARN 54061 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "customer" does not exist, skipping
+2022-12-11 12:09:28.472 DEBUG 54061 --- [main] org.hibernate.SQL                        : drop table if exists roles cascade
+2022-12-11 12:09:28.472  WARN 54061 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-12-11 12:09:28.472  WARN 54061 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "roles" does not exist, skipping
+2022-12-11 12:09:28.473 DEBUG 54061 --- [main] org.hibernate.SQL                        : drop table if exists transaction cascade
+2022-12-11 12:09:28.473  WARN 54061 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-12-11 12:09:28.473  WARN 54061 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "transaction" does not exist, skipping
+2022-12-11 12:09:28.473 DEBUG 54061 --- [main] org.hibernate.SQL                        : drop table if exists users cascade
+2022-12-11 12:09:28.473  WARN 54061 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-12-11 12:09:28.473  WARN 54061 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "users" does not exist, skipping
+2022-12-11 12:09:28.478 DEBUG 54061 --- [main] org.hibernate.SQL                        : create table account (rib int8 not null, amount real default 20, created_date date default current_date, state varchar(255), threshold_value numeric(19, 2), type varchar(255), bank_id int4, customer_id int8, primary key (rib))
+2022-12-11 12:09:28.546 DEBUG 54061 --- [main] org.hibernate.SQL                        : create table bank (id int4 generated by default as identity, address varchar(255), email varchar(255), bank_name varchar(255), telephone_number varchar(255), primary key (id))
+2022-12-11 12:09:28.559 DEBUG 54061 --- [main] org.hibernate.SQL                        : create table customer (birth_date date, family_name varchar(255), name varchar(255), id int8 not null, primary key (id))
+2022-12-11 12:09:28.564 DEBUG 54061 --- [main] org.hibernate.SQL                        : create table roles (id int4 generated by default as identity, name varchar(255), primary key (id))
+2022-12-11 12:09:28.567 DEBUG 54061 --- [main] org.hibernate.SQL                        : create table transaction (id int8 generated by default as identity, amount numeric(19, 2), date_time timestamp, message varchar(255), rib_other_account int8, type varchar(255), account_rib int8, primary key (id))
+2022-12-11 12:09:28.576 DEBUG 54061 --- [main] org.hibernate.SQL                        : create table users (id int8 generated by default as identity, cin varchar(8), password varchar(255), user_name varchar(255), role_id int4, primary key (id))
+2022-12-11 12:09:28.596 DEBUG 54061 --- [main] org.hibernate.SQL                        : alter table if exists bank add constraint UK_k7b1fp39xemdvdtco9j7uk62y unique (bank_name)
+2022-12-11 12:09:28.598 DEBUG 54061 --- [main] org.hibernate.SQL                        : alter table if exists account add constraint FKawl1lrpngb7h5ktg79odeic5w foreign key (bank_id) references bank
+2022-12-11 12:09:28.608 DEBUG 54061 --- [main] org.hibernate.SQL                        : alter table if exists account add constraint FKnnwpo0lfq4xai1rs6887sx02k foreign key (customer_id) references customer
+2022-12-11 12:09:28.610 DEBUG 54061 --- [main] org.hibernate.SQL                        : alter table if exists customer add constraint FKhu8qiqgy7buhjc5s739s4x8we foreign key (id) references users
+2022-12-11 12:09:28.612 DEBUG 54061 --- [main] org.hibernate.SQL                        : alter table if exists transaction add constraint FK3dd5yayc5v3mxg3fwllhndmeu foreign key (account_rib) references account
+2022-12-11 12:09:28.612 DEBUG 54061 --- [main] org.hibernate.SQL                        : alter table if exists users add constraint FKp56c1712k691lhsyewcssf40f foreign key (role_id) references roles
+2022-12-11 12:09:28.616  INFO 54061 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-11 12:09:28.622  INFO 54061 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-11 12:09:28.848  WARN 54061 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: c924d7c3-943b-4f15-a3e5-8fd57e466e6e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-12-11 12:09:28.953  INFO 54061 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1e4d93f7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3d1b43d8, org.springframework.security.web.context.SecurityContextPersistenceFilter@46d51d5e, org.springframework.security.web.header.HeaderWriterFilter@64cdc310, org.springframework.security.web.csrf.CsrfFilter@747e8659, org.springframework.security.web.authentication.logout.LogoutFilter@230d013b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3ac326c0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5e72c82a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@aaa7000, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@9f52eb7, org.springframework.security.web.session.SessionManagementFilter@39159b14, org.springframework.security.web.access.ExceptionTranslationFilter@59043741, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7fd4b9ec]
+2022-12-11 12:09:28.988  WARN 54061 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-11 12:09:29.334  INFO 54061 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-11 12:09:29.344  INFO 54061 --- [main] t.i.m.B.BackingRestApiApplication        : Started BackingRestApiApplication in 3.185 seconds (JVM running for 4.391)
+2022-12-11 12:10:11.884  INFO 54061 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-11 12:10:11.887  INFO 54061 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-11 12:10:11.911  INFO 54061 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 24 ms
+2022-12-11 12:11:05.271 DEBUG 54061 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select customer0_.id as id1_5_, customer0_1_.cin as cin2_5_, customer0_1_.password as password3_5_, customer0_1_.role_id as role_id5_5_, customer0_1_.user_name as user_nam4_5_, customer0_.birth_date as birth_da1_2_, customer0_.family_name as family_n2_2_, customer0_.name as name3_2_ from customer customer0_ inner join users customer0_1_ on customer0_.id=customer0_1_.id
+2022-12-11 12:12:03.105 DEBUG 54061 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select customer0_.id as id1_5_, customer0_1_.cin as cin2_5_, customer0_1_.password as password3_5_, customer0_1_.role_id as role_id5_5_, customer0_1_.user_name as user_nam4_5_, customer0_.birth_date as birth_da1_2_, customer0_.family_name as family_n2_2_, customer0_.name as name3_2_ from customer customer0_ inner join users customer0_1_ on customer0_.id=customer0_1_.id
+2022-12-11 12:53:16.302  WARN 54061 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m16s230ms).
+2022-12-11 13:12:28.231  WARN 54061 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=19m12s97ms).
+2022-12-11 13:14:39.745  WARN 54061 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m41s353ms).
+2022-12-11 13:16:06.033  WARN 54061 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s294ms).
+2022-12-11 13:17:27.280  WARN 54061 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m21s307ms).
+2022-12-11 13:42:24.148  WARN 54061 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=23m23s985ms).
+2022-12-11 14:31:29.209  WARN 54061 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=49m5s60ms).
+2022-12-11 14:32:25.750  INFO 54061 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-11 14:32:25.789  INFO 54061 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-12-11 14:32:25.796 DEBUG 54061 --- [SpringApplicationShutdownHook] org.hibernate.SQL                        : alter table if exists account drop constraint if exists FKawl1lrpngb7h5ktg79odeic5w
+2022-12-11 14:32:28.334 DEBUG 54061 --- [SpringApplicationShutdownHook] org.hibernate.SQL                        : alter table if exists account drop constraint if exists FKnnwpo0lfq4xai1rs6887sx02k
+2022-12-11 14:32:28.477 DEBUG 54061 --- [SpringApplicationShutdownHook] org.hibernate.SQL                        : alter table if exists customer drop constraint if exists FKhu8qiqgy7buhjc5s739s4x8we
+2022-12-11 14:32:28.563 DEBUG 54061 --- [SpringApplicationShutdownHook] org.hibernate.SQL                        : alter table if exists transaction drop constraint if exists FK3dd5yayc5v3mxg3fwllhndmeu
+2022-12-11 14:32:28.570 DEBUG 54061 --- [SpringApplicationShutdownHook] org.hibernate.SQL                        : alter table if exists users drop constraint if exists FKp56c1712k691lhsyewcssf40f
+2022-12-11 14:32:28.627 DEBUG 54061 --- [SpringApplicationShutdownHook] org.hibernate.SQL                        : drop table if exists account cascade
+2022-12-11 14:32:29.570 DEBUG 54061 --- [SpringApplicationShutdownHook] org.hibernate.SQL                        : drop table if exists bank cascade
+2022-12-11 14:32:29.765 DEBUG 54061 --- [SpringApplicationShutdownHook] org.hibernate.SQL                        : drop table if exists customer cascade
+2022-12-11 14:32:29.820 DEBUG 54061 --- [SpringApplicationShutdownHook] org.hibernate.SQL                        : drop table if exists roles cascade
+2022-12-11 14:32:29.845 DEBUG 54061 --- [SpringApplicationShutdownHook] org.hibernate.SQL                        : drop table if exists transaction cascade
+2022-12-11 14:32:29.907 DEBUG 54061 --- [SpringApplicationShutdownHook] org.hibernate.SQL                        : drop table if exists users cascade
+2022-12-11 14:32:30.020  INFO 54061 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-11 14:32:30.042  INFO 54061 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

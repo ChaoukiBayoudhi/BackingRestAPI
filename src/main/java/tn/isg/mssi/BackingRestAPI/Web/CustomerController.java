@@ -2,6 +2,7 @@ package tn.isg.mssi.BackingRestAPI.Web;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import tn.isg.mssi.BackingRestAPI.Entities.Customer;
 import tn.isg.mssi.BackingRestAPI.Services.CustomerService;
@@ -17,6 +18,7 @@ public class CustomerController {
     private CustomerService service;
  //path =http://localhost:8080/customers/
     @GetMapping("/")
+    @PreAuthorize("hasRole({'ADMIN','USER'})")
     public ResponseEntity<?> allCustomers() {
         return service.getAll();
     }
