@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import tn.isg.mssi.BackingRestAPI.Entities.Customer;
 import tn.isg.mssi.BackingRestAPI.Repositories.CustomerRepository;
 
+import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -45,6 +46,7 @@ public class CustomerService {
     //.filter(x->x<8) //returns a stream containing 4 and 6
     //.map(x->3*x) //returns a stream containing 12 and 18
     //.collect(Collectors.toSet())
+
     public ResponseEntity<?> addCustomer(Customer customer) {
         List<Customer> lstCustomers = repository.findAll().stream() //convert from List to Stream
                 .filter(c -> c.getCin().equals(customer.getCin()))

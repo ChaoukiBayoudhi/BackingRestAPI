@@ -23,7 +23,7 @@ public class Role {
     @Enumerated(EnumType.STRING)
     @EqualsAndHashCode.Include
     private ERole name;
-    @OneToMany(mappedBy = "role",cascade = CascadeType.ALL)
+    @ManyToMany(mappedBy = "roles")
     private Set<User> users = new HashSet<>();
 
 }

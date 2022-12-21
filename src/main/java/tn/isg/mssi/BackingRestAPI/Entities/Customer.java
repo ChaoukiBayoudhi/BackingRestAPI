@@ -16,8 +16,11 @@ import java.util.Set;
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
 
-@PrimaryKeyJoinColumn(name="id")
-public class Customer extends User {
+//@PrimaryKeyJoinColumn(name="id")
+public class Customer {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     @NonNull
     private String name;
